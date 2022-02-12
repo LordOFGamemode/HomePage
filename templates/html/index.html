@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/loader.css') }}">
+    <title>LordOFGamemode|Home</title>
+</head>
+<body>
+    <div class="load">
+
+    </div>
+    <nav id="nav">
+        <div id="logo">
+            LOG|LordOFGamemode
+        </div><br>
+        <button class="ui-button" onclick="window.location.href = './' ">HOME</button>
+        <button class="ui-button" onclick="window.location.href = './download' ">DOWNLOADS</button>
+    </nav>
+    <div id="objcont">
+        <div class="obj" style="margin-left: 8%">
+            <div class="text" id="style-1">
+                <h2>Text Title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+                <button class="ui-button">More Here</button>
+            </div>
+            <img src="{{ url_for('static', filename='img/necromancer.PNG') }}" alt="">
+        </div>
+        <div class="obj" style="margin-right: 8%;">
+            <img src="https://picsum.photos/300/300/?random" alt="" style="margin-left: -4%;">
+            <div class="text" id="style-1" style="margin-left: 2%; transform: scaleX(-1);">
+                <h2 style="transform: scaleX(-1);">Text Title</h2>
+                <p style="transform: scaleX(-1);">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+                <button class="ui-button" style="transform: scaleX(-1);">More Here</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/loader.js') }}"></script>
+</body>
+</html>
